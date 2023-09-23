@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: black;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ephrem Adugna</title>
+</head>
+<body>
+    <img height="100%" style="display: block; position: absolute;
+    left:50%;
+    transform: translateX(-50%);" id="obama" src="obama.jpg" />
+    <img height="100%" style="display: none; position: absolute;
+    left:50%;
+    transform: translateX(-50%);" id="ephrem" src="Ephrem.png" />
+    <script>
+        window.onload = (()=>{
+            var ephrem = document.getElementById('ephrem')
+            var obama = document.getElementById('obama')
+            setInterval(()=>{
+                if(obama.style.display === "block"){
+                obama.style.display = "none";
+                ephrem.style.display = "block";
+                }
+                else if(obama.style.display === "none"){
+                     obama.style.display = "block";
+                     ephrem.style.display = "none";
+                }
+            }, 1000)
+        })
+    </script>
+</body>
+</html>
