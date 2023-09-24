@@ -1,18 +1,39 @@
 <!DOCTYPE html>
-<html lang="en" y style="margin: 0; padding: 0;">
+<html id="html" lang="en" style=" -webkit-filter: brightness(0.8);
+    filter: brightness(0.8);background: black url(./1.png) no-repeat center center fixed; background-size: auto 100%;">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ephrem Adugna</title>
 </head>
-<body style="margin: 0; padding: 0;">
-<img src="./rickroll-roll.gif" width="100%" />
-<script>
-    window.onload = setTimeout(()=>{
-    alert("Congrats, you've been bamboozled. Come see me (Ephrem) for your prize")
-    },2000);
-   
+
+<body style="color: white;">
+    <h1
+        style=" text-align: left;font-style: italic; font-size: 75px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+        Vote Ephrem For</h1>
+
+    <ul
+        style="width: 25%; text-align: left;font-style: italic; font-size: 75px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+        <li>Shorter Lunch Lines</li>
+        <li>Consistent School Dress Days</li>
+        <li>Break and Lunch Games</li>
+        <li>A School Your WANT to go to on Monday</li>
+    </ul>
+    <script>
+        var html = document.getElementById("html");
+        var turn = 1
+        window.onload = setInterval(() => {
+            html.style.backgroundImage = `url(./${turn.toString()}.png)`
+            if (turn >= 3) {
+                turn = 1;
+                return;
+            }
+            turn++;
+
+        }, 2000)
     </script>
 </body>
+
 </html>
