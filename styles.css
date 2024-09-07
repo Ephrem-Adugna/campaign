@@ -1,0 +1,26 @@
+*{
+    font-family: Roboto;
+}
+h1{
+    text-align: center;
+}
+h1{
+    font-size: 50px;
+}
+ul{
+    font-size: 40px;
+
+}
+.container{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+}
+embed{
+    height: 80vh;
+    width: 90vh;
+}
+i{
+    display: block;
+    text-align: center;
+}
